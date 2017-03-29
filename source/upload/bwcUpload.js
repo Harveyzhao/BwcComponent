@@ -1,6 +1,7 @@
 (function(angular) {
 
     function BwcUploadController($scope, $element) {
+		console.log(angular.element(this))
         console.log($element)
         $scope.fileList = []
         $scope.action = 'http://api.admin.earth.dev.bwcmall.cn/api/v1/brand/upload?token=7e42b3bbe908bec99a1906dfb7b3004e'
@@ -26,7 +27,7 @@
             $scope.fileList.push(file);
         }
         var beforeUpload = undefined
-        $scope.handleChange = function(ev) {
+        window.handleChange = function(ev) {
             console.log(ev.files)
             const files = ev.files;
 
@@ -225,7 +226,7 @@
 						</ul>
 						<div class="el-upload el-upload--picture-card" ng-click="handleClick($event)">
 							<i class="el-icon-plus"></i>
-							<input class="el-upload__input" type="file" ng-model="file" onchange="angular.element(this).scope().handleChange(this)" multiple="true"
+							<input class="el-upload__input" type="file" ng-model="file" onchange="handleChange(this)" multiple="true"
 								accept="PNG|jpg"></input>
 						</div>`,
             controller: BwcUploadController,

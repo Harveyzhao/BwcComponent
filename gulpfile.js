@@ -15,8 +15,9 @@ var gulp       = require('gulp'),
 
 $.karma = require('karma');
 
+//test jshint
 gulp.task('build', ['clean'], function () {
-  return gulp.start('styles', 'styles:copy-source', 'jscs', 'uglify', 'test');
+  return gulp.start('styles', 'styles:copy-source', 'jscs', 'uglify');
 });
 
 gulp.task('deploy', ['clean:deploy'], function () {
