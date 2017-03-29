@@ -1,6 +1,5 @@
 /**
  * @license Bwcmall Angular components package v1.0.0
- * (c) 2010-2017. https://github.com/Harveyzhao/BwcComponent.git
  * License: MIT
  */
 (function(angular) {
