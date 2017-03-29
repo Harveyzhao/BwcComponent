@@ -1,13 +1,13 @@
 (function() {
     'use strict';
 
-    angular.module('bwcCmp', ['ui.tree', 'ngRoute', 'ui.bootstrap'])
+    angular.module('demoApp', ['ngRoute', 'ui.bootstrap', 'bwc.component'])
 
     .config(['$routeProvider', '$compileProvider', function($routeProvider, $compileProvider) {
         $routeProvider
             .when('/upload', {
                 controller: 'UploadController',
-                templateUrl: 'views/uploadController.html'
+                templateUrl: 'views/upload.html'
             })
             .otherwise({
                 redirectTo: '/'

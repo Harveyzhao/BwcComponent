@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>AngularJS UI Tree demo</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/app.css">
+<head>
+    <meta charset="utf-8">
+    <title>Bwc component package demo</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../source/theme/index.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body ng-app="demoApp">
-<div class="container">
-  <div>
-    <div class="jumbotron">
-      <h1>Bwc component</h1>
+    <div class="container">
+        <div>
+            <div class="jumbotron">
+                <h1>Bwc component</h1>
 
-      <p class="lead">The AngularJS component package transplant by Element-ui.</p>
+                <p class="lead">The AngularJS component package transplant by Element-ui.</p>
 
-      <p><a class="btn btn-lg btn-success" href="https://github.com/angular-ui-tree/angular-ui-tree" role="button">Code on
+                <p><a class="btn btn-lg btn-success" href="https://github.com/Harveyzhao/BwcComponent.git" role="button">Code on
         GitHub</a></p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>View Examples</h2>
+                    <ol>
+                        <li><a href="#/upload">upload</a></li>
+                    </ol>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>What?</h2>
+                    <p>
+                        ..
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Uses the native AngularJS scope for build component</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>See it in action</h2>
+                <ng-view></ng-view>
+            </div>
+        </div>
+
     </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <h2>View Examples</h2>
-        <ol>
-          <li><a href="#/upload">upload</a></li>
-        </ol>
-      </div>
+    <!-- JavaScript -->
+    <!--[if IE 8]>
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
+    <![endif]-->
 
-      <div class="col-md-4">
-        <h2>What?</h2>
-        <p>
-          ..
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Features</h2>
-        <ul>
-          <li>Uses the native AngularJS scope for build component</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 
-  <div class="row">
-    <div class="col-sm-12">
-      <h2>See it in action</h2>
-      <ng-view></ng-view>
-    </div>
-  </div>
+    <script src="../source/main.js"></script>
+    <script src="../source/upload/bwcUpload.js"></script>
 
-</div>
-
-<!-- JavaScript -->
-<!--[if IE 8]>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
-<![endif]-->
-
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-
-
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/upload.js"></script>
 </body>
+
 </html>

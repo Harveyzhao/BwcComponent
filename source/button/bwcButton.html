@@ -1,13 +1,14 @@
-<button disabled="{{disabled}}" class="el-button" ng-click="handleClick()" autofocus="autofocus" type="nativeType" ng-class="[
+<button disabled="{{$ctrl.disabled}}" class="el-button" ng-click="handleClick()" autofocus="{{$ctrl.autofocus}}" type="{{$ctrl.nativeType}}"
+    ng-class="[
       $ctrl.type ? 'el-button--' + $ctrl.type : '',
       $ctrl.size ? 'el-button--' + $ctrl.size : '',
       {
-        'is-disabled': disabled,
-        'is-loading': loading,
-        'is-plain': plain
+        'is-disabled': $ctrl.disabled,
+        'is-loading': $ctrl.loading,
+        'is-plain': $ctrl.plain
       }
     ]">
-    <i class="el-icon-loading" ng-if="loading"></i>
-    <i ng-class="'el-icon-' + icon" ng-if="icon && !loading"></i>
+    <i class="el-icon-loading" ng-if="$ctrl.loading"></i>
+    <i ng-class="'el-icon-' + $ctrl.icon" ng-if="$ctrl.icon && !$ctrl.loading"></i>
     <span ng-transclude></span>
   </button>

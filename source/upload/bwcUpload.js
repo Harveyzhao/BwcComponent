@@ -1,6 +1,7 @@
 (function (angular) {
 
-	function BwcUploadController($scope) {
+	function BwcUploadController($scope,$element) {
+		console.log($element)
 		$scope.fileList = []
         $scope.action = 'http://api.admin.earth.dev.bwcmall.cn/api/v1/brand/upload?token=7e42b3bbe908bec99a1906dfb7b3004e'
 		var autoUpload = true
@@ -197,7 +198,7 @@
 		}
 	}
 
-	angular.module('mainApp')
+	angular.module('bwc.component')
 		.component('bwcUpload', {
 			templateUrl:'components/upload/bwcUpload.html',
 			controller: BwcUploadController,

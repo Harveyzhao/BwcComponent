@@ -30,16 +30,16 @@ module.exports = function (gulp, $) {
         'source/**/*.js',
         '!**/*.spec.js'
       ])
-      .pipe($.concat('angular-ui-tree.js'))
+      .pipe($.concat('/bwc-component.js'))
       .pipe(gulp.dest('dist'));
   });
 
   gulp.task('uglify', ['concat'], function () {
-    return gulp.src('dist/angular-ui-tree.js')
+    return gulp.src('dist/bwc-component.js')
       .pipe($.uglify({
         preserveComments: 'some'
       }))
-      .pipe($.rename('angular-ui-tree.min.js'))
+      .pipe($.rename('bwc-component.min.js'))
       .pipe(gulp.dest('dist'));
   });
 
