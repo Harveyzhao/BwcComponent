@@ -1,0 +1,156 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Basic Example</h3>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        layout
+    </div>
+    <div class="col-sm-12">
+        <bwc-row>
+            <bwc-col :span="24">
+                <div class="grid-content bg-purple-dark"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row>
+            <bwc-col :span="12">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="12">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row>
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple-light"></div>
+            </bwc-col>
+        </bwc-row>
+    </div>
+    <div class="col-sm-12">
+        <bwc-row :gutter="20">
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="6">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+        </bwc-row>
+    </div>
+    <div class="col-sm-12">
+        <bwc-row :gutter="20">
+            <bwc-col :span="16">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row :gutter="20">
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="8">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+        </bwc-row>
+        <bwc-row :gutter="20">
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="16">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+            <bwc-col :span="4">
+                <div class="grid-content bg-purple"></div>
+            </bwc-col>
+        </bwc-row>
+
+    </div>
+</div>
+
+<style>
+    .el-row {
+        margin-bottom: 20px;
+    }
+    
+    .el-col {
+        border-radius: 4px;
+    }
+    
+    .bg-purple-dark {
+        background: #99a9bf;
+    }
+    
+    .bg-purple {
+        background: #d3dce6;
+    }
+    
+    .bg-purple-light {
+        background: #e5e9f2;
+    }
+    
+    .grid-content {
+        border-radius: 4px;
+        min-height: 36px;
+    }
+    
+    .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+    }
+</style>

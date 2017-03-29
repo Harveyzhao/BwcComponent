@@ -9,6 +9,14 @@
                 controller: 'UploadController',
                 templateUrl: 'views/upload.html'
             })
+            .when('/card', {
+                controller: 'CardController',
+                templateUrl: 'views/card.html'
+            })
+             .when('/layout', {
+                controller: 'LayoutController',
+                templateUrl: 'views/layout.html'
+            })
             .otherwise({
                 redirectTo: '/'
             });
